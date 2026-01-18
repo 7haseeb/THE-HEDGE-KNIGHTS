@@ -1,0 +1,63 @@
+/* Header Block */
+.header {
+  height: 100vh;
+  background: linear-gradient(270deg, #000, #111, #0f0f0f);
+  background-size: 600% 600%;
+  animation: header__gradient-animation 15s ease infinite;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header Title Element */
+.header__title {
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Header Logo Element */
+.header__logo {
+  width: 240px;
+  height: 240px;
+  margin-bottom: 30px;
+  object-fit: contain;
+}
+
+/* Header Title Typing Modifier */
+.header__title--typing {
+  display: inline-block;
+  border-right: 3px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: header__typing-blink 0.7s steps(1) infinite;
+}
+
+/* Header Subtitle Element */
+.header__subtitle {
+  margin-top: 12px;
+  color: #aaa;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Header Subtitle Fade-in Modifier */
+.header__subtitle--visible {
+  opacity: 1;
+}
+
+/* Keyframe Animations */
+@keyframes header__typing-blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes header__gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

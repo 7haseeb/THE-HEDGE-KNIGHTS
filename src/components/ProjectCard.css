@@ -1,0 +1,32 @@
+/* Project Card Block */
+.project-card {
+  background: #1a1a1a;
+  padding: 24px;
+  border-radius: 14px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Project Card Hover Modifier */
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px cyan;
+}
+
+/* Project Card Image Element */
+.project-card__image {
+  height: 160px;
+  background: #333;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+/* Project Card Title Element */
+.project-card__title {
+  color: white;
+}
+
+/* Project Card Tech Element */
+.project-card__tech {
+  color: #aaa;
+  font-size: 0.9rem;
+}

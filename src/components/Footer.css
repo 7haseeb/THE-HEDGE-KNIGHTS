@@ -1,0 +1,29 @@
+/* Footer Block */
+.footer {
+  background: #111;
+  color: #aaa;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Footer Title Element */
+.footer__title {
+  color: white;
+  margin-bottom: 8px;
+  text-shadow: 0 0 8px cyan;
+}
+
+/* Footer Members Element */
+.footer__members {
+  color: #0ff;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+/* Footer Text Element */
+.footer__text {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
