@@ -121,6 +121,7 @@ export default function Team() {
     },
     {
       name: "Muhammad Haseeb",
+      role: "Computer Vision Engineer",
       image: member4,
       experience: "2+ years of experience as a Computer Vision Engineer developing and solving advanced vision-based problems.",
       skills: [
