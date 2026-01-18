@@ -23,3 +23,36 @@
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .projects {
+    padding: 60px 20px;
+  }
+
+  .projects__title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .projects__grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    padding: 40px 15px;
+  }
+
+  .projects__title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

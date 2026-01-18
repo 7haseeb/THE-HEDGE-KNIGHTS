@@ -64,6 +64,49 @@
   }
 
   .team__title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .team__description {
+    font-size: 0.95rem;
+    margin-bottom: 40px;
+  }
+
+  .team__members {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team {
+    padding: 40px 15px;
+  }
+
+  .team__title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .team__description {
+    font-size: 0.85rem;
+    margin-bottom: 30px;
+  }
+
+  .team__members {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .team {
+    padding: 60px 20px;
+  }
+
+  .team__title {
     font-size: 2.2rem;
     margin-bottom: 40px;
   }

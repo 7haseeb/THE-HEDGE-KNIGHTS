@@ -52,12 +52,52 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .member-card {
     width: 200px;
+    min-width: 200px;
     padding: 20px;
+    margin: 0 auto;
   }
+
   .member-card__avatar {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+
+  .member-card__title {
+    font-size: 1.2rem;
+  }
+
+  .member-card__role {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .member-card {
+    width: 100%;
+    max-width: 280px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .member-card__avatar {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 12px;
+  }
+
+  .member-card__title {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+  }
+
+  .member-card__role {
+    font-size: 0.85rem;
+  }
+}
     width: 100px;
     height: 100px;
   }
