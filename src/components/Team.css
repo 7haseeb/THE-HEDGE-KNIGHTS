@@ -7,7 +7,7 @@
   width: 100%;
   box-sizing: border-box;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* Team Title Element */
@@ -40,6 +40,7 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
+  box-sizing: border-box;
 }
 
 /* Responsive adjustments */
@@ -74,7 +75,7 @@
   }
 
   .team__members {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: 1fr;
     gap: 30px;
   }
 }
@@ -98,26 +99,5 @@
     grid-template-columns: 1fr;
     gap: 20px;
     max-width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .team {
-    padding: 60px 20px;
-  }
-
-  .team__title {
-    font-size: 2.2rem;
-    margin-bottom: 40px;
-  }
-
-  .team__description {
-    font-size: 1rem;
-    margin-bottom: 40px;
-  }
-
-  .team__members {
-    grid-template-columns: 1fr;
-    gap: 30px;
   }
 }
